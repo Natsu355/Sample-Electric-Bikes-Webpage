@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Electric Bikes</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/CSS" href="index.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header">
+      <h1>Electric Bikes</h1>
+    </div>
+  </header>
+ <div class="Bikegroup">
+   <div class="Bike">
+     <img src="https://imgd.aeplcdn.com/1280x720/n/cw/ec/108613/infinity-e1-right-front-three-quarter.jpeg?isig=0&q=80" alt="Bounce Infinity E1"/>
+     <div class="BikeInfo">
+       <h1>Bounce Infinity E1</h1>
+       <h6>Speed: 65 kmph</h6>
+       <h6>Range: 85 Km</h6>
+       <h6>Battery: 4 Hours</h6>
+       <h6>Weight: 94 Kg</h6>
+       <h5>Price: Rs 36,999 onwards<h5>
+         </div>
+         </div>
+        <div class="Bike">
+     <img src="https://imgd.aeplcdn.com/1280x720/n/cw/ec/107243/s1-pro-right-front-three-quarter-2.jpeg?isig=0&q=80" alt="Ola s1 pro"/>
+     <div class="BikeInfo">
+       <h1>OLA s1 Pro</h1>
+       <h6>Speed: 115 kmph</h6>
+       <h6>Range: 135 Km</h6>
+       <h6>Battery: 6.3 Hours</h6>
+       <h6>Weight: 125 Kg</h6>
+       <h5>Price: Rs 36,999 onwards<h5>
+         </div>
+         </div> 
+   <div class="Bike">
+     <img src="https://imgd.aeplcdn.com/1280x720/n/cw/ec/96227/left-side-view.jpeg?q=80" alt="Hero Electric Photon"/>
+     <div class="BikeInfo">
+       <h1>Hero Electric Photon</h1>
+       <h6>Speed: 45 kmph</h6>
+       <h6>Range: 105 Km</h6>
+       <h6>Battery: 5 Hours</h6>
+       <h6>Weight: 87 Kg</h6>
+       <h5>Price: Rs 80,790 onwards<h5>
+         </div>
+         </div>
+        <div class="Bike">
+     <img src="https://imgd.aeplcdn.com/1280x720/n/cw/ec/40710/rv-400-right-side-view.jpeg?q=80" alt="Revolt RV400"/>
+     <div class="BikeInfo">
+       <h1>Revolt RV400</h1>
+       <h6>Speed: 85 kmph</h6>
+       <h6>Range: 150 Km</h6>
+       <h6>Battery: 4.5 Hours</h6>
+       <h6>Weight: 108 Kg</h6>
+       <h5>Price: Rs 1,01,004 onwards
+<h5>
+         </div>
+         </div>
+          </div>  
+     <div class="container">
+    <h2 align="center">Reach Us</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Name : </label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail :</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your e-mail">
+      </div>
+      <div class="form-group">
+        <label for="number">Mobile No:</label>
+        <input type="number" id="number" class="form-control" placeholder="Enter your mobile number">
+      </div>
+      <div class="form-group">
+        <label for="state">Enter your State:</label>
+        <input type="text" id="state" class="form-control" placeholder="Enter your State">
+      </div>
+      <div class="form-group">
+        <label for="query">Enter your Query:</label>
+        <textarea rows="5" cols="10" id="query" class="form-control" placeholder="Please enter your question"></textarea>
+      </div>     
+     
+      <button type="submit" onclick="saveData()" class="btn btn-primary">Submit</button>
+      </body>
+      <script>
+        function saveData() {
+          let name,email,mobile,state,query;
+          name=document.getElementById("name").value;
+          email=document.getElementById("email").value;
+          mobile=document.getElementById("number").value;
+          state=document.getElementById("state").value;
+          query=document.getElementById("query").value;
+          localStorage.setItem("name",name)
+          localStorage.setItem("email",email)
+          localStorage.setItem("mobile",mobile)
+          localStorage.setItem("state",state)
+          localStorage.setItem("query",query)
+        }
+       </script>
+       </body>
+          </html>
